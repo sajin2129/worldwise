@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom'
 import './loca.css'
 
 import Map from './Map'
-import { UseData } from './DataProvider'
+// import { UseData } from './DataProvider'
 
 const loca = () => {
 

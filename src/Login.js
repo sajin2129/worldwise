@@ -26,17 +26,25 @@ const Login = () => {
     const [errors, setErrors] = useState({});
     const [mail, setMail] = useState("");
     const [pin, setPin] = useState("");
+    const [none, setNone] = useState(false);
 
     let values = {
         pin,
         mail
+    }
+    const hint = () => {
+        setNone(true)
+    }
+
+    const close = () => {
+        setNone(false)
     }
 
     function handlevalidation(event) {
         event.preventDefault()
         setErrors(Validation(values));
 
-        if (logacc.find((e) => e.email == mail && e.password == pin)) {
+        if (logacc.find((e) => e.email === mail && e.password === pin)) {
             navigete("/loca/City")
         } else {
 
@@ -76,6 +84,16 @@ const Login = () => {
                     <div> <button>LOGIN</button></div>
                     {/* </Link> */}
                 </form>
+                <div className="hint">
+                    <button onClick={hint}>HINT</button>
+
+                    <div className={none ? "show" : "none"}>
+                        <p>username:sajin@amail.com</p>
+                        <p>password:sajin1S</p>
+                        <button onClick={close}>close</button>
+
+                    </div>
+                </div>
             </div>
 
 
