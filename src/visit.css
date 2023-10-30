@@ -1,0 +1,38 @@
+.citdet{
+    width: 80%;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+    justify-content: space-evenly;
+    background-color: #42484D;
+    color: #ECECEC;
+  border-top-left-radius: 8px;
+
+}
+.citd{
+  width: 80%;
+  height: 100%;
+}
+.citdet p{
+    font-size: small;
+    font-weight: 700;
+    color: gray;
+}
+
+.citdet h4{
+    color: rgb(235, 213, 13);
+    font-weight: 400;
+    text-decoration: underline;
+  cursor: pointer;
+}
+.bac button{
+  padding: 6px 12px;
+  background-color: #42484D;
+  border: 2px solid #ECECEC;
+  color: #ECECEC;
+  border-radius: 4px;
+  cursor: pointer;
+}
